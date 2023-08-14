@@ -1,5 +1,5 @@
 <?php
-require 'connect.php';
+require '../index.php';
 
 if (isset($_GET['id_sender']) && isset($_GET['id_receiver'])) {
     $senderId = $_GET['id_sender'];

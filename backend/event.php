@@ -1,5 +1,5 @@
 <?php
-require 'connect.php';
+require '../index.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'), true);
@@ -10,8 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $eventName = $data['eventName'];
         $eventDescription = $data['eventDescription'];
 
-        // Теперь вы можете использовать полученные данные для добавления события в БД
-        // Например:
         $sql = "INSERT INTO event (date, name, description) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("sss", $eventDate, $eventName, $eventDescription);

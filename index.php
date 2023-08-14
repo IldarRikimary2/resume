@@ -10,14 +10,12 @@ header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token, X-Requested-With, Authorization');
 
 // Allow credentials (if needed)
-header('Access-Control-Allow-Credentials: true');;
-
-
+header('Access-Control-Allow-Credentials: true');
 
 $servername = "localhost";
-$database = "resume";
-$username = "root";
-$password = "";
+$database = "resume"; // ildarrhf_resume
+$username = "root"; // ildarrhf_resume
+$password = ""; // Bkmlfh_009
 
 // Create connection
 

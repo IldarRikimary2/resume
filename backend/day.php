@@ -1,5 +1,5 @@
-<?php
-require 'connect.php';
+<?
+require '../index.php';
 
 if (isset($_GET['dateId'])) {
     $dateId = $_GET['dateId'];

@@ -1,5 +1,5 @@
 <?php
-require 'connect.php';
+require '../index.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['date'])) {
     $date = $_GET['date'];

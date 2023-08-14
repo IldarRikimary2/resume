@@ -1,5 +1,5 @@
 <?php
-require 'connect.php';
+require '../index.php';
 
 $sql = "SELECT * FROM product";
 $result = mysqli_query($conn, $sql);

@@ -1,5 +1,5 @@
 <?php
-require 'connect.php';
+require '../index.php';
 
 if (isset($_GET['groupId'])) {
     $groupId = $_GET['groupId'];

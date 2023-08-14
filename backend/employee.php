@@ -1,5 +1,5 @@
 <?php
-require 'connect.php';
+require '../index.php';
 
 // SQL-запрос для выборки всех записей из таблицы "employee"
 $sql = "SELECT * FROM employee";
